@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ ch.name }} - Cybercamp 2026{% endblock %}
+{% block content %}
+<a class="back-link" href="/">&larr; All challenges</a>
+
+<article class="chall-detail card">
+  <div class="detail-head">
+    <span class="tag tag-{{ ch.category|lower }}">{{ ch.category }}</span>
+    <span class="chall-points big">{{ ch.points }} pts</span>
+  </div>
+  <h1>{{ ch.name }}</h1>
+  <p class="author">by <strong>{{ ch.author }}</strong></p>
+  <p class="desc">{{ ch.desc }}</p>
+</article>
+{% endblock %}

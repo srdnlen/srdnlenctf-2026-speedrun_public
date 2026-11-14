@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Report an issue - Cybercamp 2026{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>Report an issue</h1>
+  <p class="subtitle">
+    Found a problem? Just paste the link to the challenge page that shows it and
+    a staff member will take a look.
+  </p>
+</section>
+
+<div class="card form-card">
+  <form method="POST" action="/report" class="form">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label>Link to the page with the problem
+      <input type="text" name="url" placeholder="/challenge/web-01" required>
+    </label>
+    <button type="submit" class="btn">Send report to staff</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Login - Cybercamp 2026{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>Login</h1>
+  <p class="subtitle">Sign in to your Cybercamp 2026 account.</p>
+</section>
+
+<div class="card form-card login-card">
+  {% if error %}<div class="alert err">{{ error }}</div>{% endif %}
+  <form method="POST" action="/login" class="form">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label>Username
+      <input type="text" name="username" autocomplete="username" required>
+    </label>
+    <label>Password
+      <input type="password" name="password" autocomplete="current-password" required>
+    </label>
+    <button type="submit" class="btn">Sign in</button>
+  </form>
+  <p class="muted small" style="margin-top:14px;">No account yet? <a href="/register">Register</a>.</p>
+</div>
+{% endblock %}

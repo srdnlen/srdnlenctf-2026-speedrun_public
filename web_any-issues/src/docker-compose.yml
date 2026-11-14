@@ -1,0 +1,40 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      SECRET_KEY: "5fb91a3239d75a9c5a105b568e49fafa"
+      FLAG: "srdnlen{y0u_f0und_4n_1ssue}"
+      ADMIN_USERNAME: "admin"
+      ADMIN_PASSWORD: "8cac409b9b51935cca7c7ec697656e80"
+      BOT_URL: "http://bot:8080"
+    ports:
+      - "1337:5000"
+    restart: unless-stopped
+    networks:
+      - ctfnet
+
+  bot:
+    build:
+      context: .
+      dockerfile: bot/Dockerfile
+    environment:
+      APP_BASE_URL: "http://app:5000"
+      ADMIN_USERNAME: "admin"
+      ADMIN_PASSWORD: "8cac409b9b51935cca7c7ec697656e80"
+      ALLOWED_HOSTS: "anyissues.challs.srdnlen.it,localhost:1337,127.0.0.1:1337,localhost,127.0.0.1,app:5000"
+      VISIT_TIMEOUT: "5"
+      NUM_WORKERS: "3"
+      QUEUE_MAX: "100"
+    expose:
+      - "8080"
+    depends_on:
+      - app
+    restart: unless-stopped
+    networks:
+      - ctfnet
+
+networks:
+  ctfnet:
+    driver: bridge

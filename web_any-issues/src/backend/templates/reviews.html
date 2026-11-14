@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Reports panel - Cybercamp 2026{% endblock %}
+{% block content %}
+<section class="page-head">
+  <h1>Reports panel</h1>
+  <p class="subtitle">Reserved to staff reviewers.</p>
+</section>
+
+{% if unlocked %}
+  <p class="flag mono">{{ flag }}</p>
+
+  <section class="card">
+    <h2>Reported links</h2>
+    {% if reports %}
+      <table class="report-table">
+        <thead><tr><th>Link</th><th>Timestamp</th></tr></thead>
+        <tbody>
+          {% for r in reports %}
+          <tr><td class="mono">{{ r.link }}</td><td class="mono">{{ r.time }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="muted">No reports yet.</p>
+    {% endif %}
+  </section>
+{% else %}
+  <div class="card locked">
+    <h2>&#128274; Access denied</h2>
+    <p class="muted">
+      This panel is reserved to <strong>reviewers</strong>. You are logged in as
+      <strong>{{ username }}</strong>, which is not a reviewer.
+    </p>
+  </div>
+{% endif %}
+{% endblock %}

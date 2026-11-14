@@ -1,0 +1,33 @@
+{
+  "categories": ["Web", "Pwn", "Crypto", "Rev", "Misc"],
+  "challenges": [
+    {"id": "web-01", "name": "Delivery Support", "category": "Web", "author": "@sanmatte", "points": 437,
+     "desc": "They messed up, and won't even answer on their stupid customer service."},
+    {"id": "web-02", "name": "Design Championship", "category": "Web", "author": "@tol0meo", "points": 325,
+     "desc": "AAAAAAAARRGGHHHHHHHHHHH"},
+    {"id": "web-03", "name": "Late Night Dirty Talks", "category": "Web", "author": "@sanmatte", "points": 156,
+     "desc": "Talk to me, talk dirty babe."},
+    {"id": "pwn-01", "name": "Faulty Calibrator", "category": "Pwn", "author": "@0x41lby", "points": 493,
+     "desc": "Platform: Linux | Glibc Version: 2.42"},
+    {"id": "pwn-02", "name": "PwnChuck", "category": "Pwn", "author": "@alessaba @musicman @caino", "points": 156,
+     "desc": "A mansion of four rooms, a remote that tilts, and a weird dude called Chuck. Its books are balanced, its map is complete, and its walls are very sure of themselves. Find the room the map forgot, and bring back what it is hiding.\nFind the solve on the emulator first, then come to the Wii station to reproduce the steps with the WiiMote and get your flag"},
+    {"id": "pwn-03", "name": "Valkey2Shell", "category": "Pwn", "author": "@doliv", "points": 500,
+     "desc": "valkey"},
+    {"id": "crypto-01", "name": "BPLCG", "category": "Crypto", "author": "@lrnzsir", "points": 500,
+     "desc": "Have you ever heard of Bulletproofs?"},
+    {"id": "crypto-02", "name": "Eureka!", "category": "Crypto", "author": "@T0mm1 @guaddu", "points": 500,
+     "desc": "Recently my friend started learning about block ciphers. He's convinced it's not a big problem to do some little changes since it's all super secure. I know he's wrong but he's also very stubborn so, to show me he's right, he prepared a custom algorithm to put in a FPGA and he asked me to try to break it. I'm not the best crypter so I need help: I wrote a python server that behaves exactly as the FPGA except for the communication protocol (yeah, obviously), can you recover the flag?"},
+    {"id": "crypto-03", "name": "Noisy IND-CCA", "category": "Crypto", "author": "@lrnzsir", "points": 500,
+     "desc": "Just a noisy IND-CCA oracle."},
+    {"id": "rev-01", "name": "Blink", "category": "Rev", "author": "@T0mm1", "points": 493,
+     "desc": "The police gave us a mysterious microcontroller, a STM32F446RE, retrieved in a big operation. They don't know exactly how it works but a mole got a piece of its source code. Can you help them to solve the case?"},
+    {"id": "rev-02", "name": "Dante's Inferno", "category": "Rev", "author": "@den1211", "points": 500,
+     "desc": "Dante has lost the straight path and must descend through five trials in the Inferno. Every gate demands a different key, but none of them are given freely.\nEach correct answer contributes in reaching the truth, so partial journeys will not save you."},
+    {"id": "misc-01", "name": "Entry Pass", "category": "Misc", "author": "@uNickz", "points": 472,
+     "desc": "Sardinia Cyber Camp II is here. Create your account and print your personal entry pass for the camp."},
+    {"id": "misc-02", "name": "P0k3h34rtg0s1nt", "category": "Misc", "author": "@irina.exe @den1211", "points": 472,
+     "desc": "Johto remembers more than it says. Follow the lore, identify the correct witnesses, and extract the words they emphasize."},
+    {"id": "misc-03", "name": "Open Source Sardinialence", "category": "Misc", "author": "@milka-cookies @SannaZ", "points": 500,
+     "desc": "unity"}
+  ]
+}

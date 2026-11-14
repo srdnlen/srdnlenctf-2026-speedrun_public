@@ -1,0 +1,1 @@
+Spotted a broken challenge on the Cybercamp 2026 platform? Report the link and a staff reviewer will take a look as soon as possible.
