@@ -1,6 +1,6 @@
 # Srdnlen CTF 2026
 
-Srdnlen CTF 2026 Speedrun - Sardinia CyberCamp 2026 is the final phase of the third edition of the online Jeopardy-style Capture-The-Flag competition hosted by the members of [Srdnlen](https://srdnlen.it/), an italian team based in Sardinia, supported by the italian [Cybersecurity National Laboratory](https://cybersecnatlab.it/). In this repository there are the challenges proposed during the speedrun segment.
+Srdnlen CTF 2026 Speedrun - Sardinia CyberCamp 2026 is the final phase of the forth edition of the online Jeopardy-style Capture-The-Flag competition hosted by the members of [Srdnlen](https://srdnlen.it/), an italian team based in Sardinia, supported by the italian [Cybersecurity National Laboratory](https://cybersecnatlab.it/). In this repository there are the challenges proposed during the speedrun segment.
 
 ## Challenges
 
